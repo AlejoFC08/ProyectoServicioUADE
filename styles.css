@@ -1,0 +1,498 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+background-color: aliceblue;
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+display: flex;
+min-height: 60px;
+background-color: rgb(209, 228, 235);
+justify-content: space-between;
+align-items: center;
+padding: 0 5%;
+height: 100px;
+
+
+}
+
+
+.logo{
+    height: 50px;
+display: flex;
+align-items: center;
+color: rgb(1, 1, 14);
+
+}
+
+
+.logo img{
+height: 70px;
+margin-right: 20px;
+font-weight: bold;}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+font-weight: 600;
+padding-right: 10px;
+
+}
+
+nav a:hover{
+    color: aliceblue;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+
+    }
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+.color-acento{
+    color:rgb(209, 228, 235);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 1px 0px #000;
+}
+
+  
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:rgb(29, 29, 29) ;
+
+}
+
+button:hover{
+    background-color: rgb(49, 48, 48);
+}
+
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(img/1457189710.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+#hero h1{
+    color: rgb(255, 255, 255);
+
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somoscorte{
+    margin: 16px 0px;
+    font-weight: bold; 
+}
+#somoscorte h2{
+    font-size: 3.5em;
+}
+#somoscorte .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#servicios{
+    background-color:rgb(209, 228, 235) ;
+    text-align: center;
+
+}
+
+#servicios .conteiner{
+    padding: 100px 0px;
+        
+
+}
+#servicios h2{
+    margin-top: 0%;
+    font-size: 3.2em;
+}
+#servicios h3{
+    font-size: 2.5em;
+}
+#servicios p{
+    display: none;
+}
+#servicios li{
+    display: none;
+}
+
+#servicios .carta{
+background-position: center center;
+background-size: center;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
+color: azure;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/tecnicas-barberia.avif)
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/the-barber-spa-the-shaving.jpeg)
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/327-f1.jpg)
+}
+
+#caracteristicas .container{
+text-align: center;
+padding: 200px 12px;
+}
+
+#caracteristicas li{
+margin: 16px 0px;
+font-weight: bold; 
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    height: 80vh;
+}
+#final h2{
+    font-size: 9vw;
+}
+#final button{
+    font-size: 5vw;
+
+}
+
+
+@media (min-width:720px){
+header{
+    position: fixed;
+    width: 100%;
+}
+
+#hero h1{
+    font-size: 5em;
+}
+#somoscorte .container{
+display: flex;
+justify-content: space-evenly;
+}
+
+#somoscorte .texto{
+width:50% ;
+max-width: 700%;
+text-align: initial;
+padding-left: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+}
+
+#somoscorte .img-container{
+    background-image:url(img/OIP.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+#somoscorte h2{
+margin-top: 0px;
+}
+
+#servicios .programas{
+display: flex;
+justify-content: center;
+}
+
+#servicios p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#servicios h2{
+    font-size: 4em;
+}
+#servicios h3{
+    margin-top: 0;
+}
+
+#servicios .carta{
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#caracteristicas{
+    background-image: url(img/R.jpeg);
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw -500PX) 120px;
+}
+#caracteristicas .container{
+    text-align: initial;
+}
+#caracteristicas ul{
+    margin-left: 100px;
+}
+
+
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+.precios{
+    /* Estilos CSS */
+.menu {
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+span {
+    font-size: 18px;
+}
+
+
+}
+
+
+
+
+footer{
+    background-color: #181818;
+
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 10px 30px ;
+    background-color: rgb(209, 228, 235);
+}
+
+.footerimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: rgb(239, 232, 232);
+    margin-top: 30px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.socialIcons a i{
+    font-size: 1.5em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #eeeaea;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 3px 0;
+    align-items: center;
+
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:rgb(0, 0, 0);
+    margin: 8px;
+
+
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #f8f6f6;
+    padding: 0px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+        
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
