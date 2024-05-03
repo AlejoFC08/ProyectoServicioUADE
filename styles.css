@@ -6,7 +6,7 @@
 }
 
 body{
-background-color: aliceblue;
+background-color: #f0f8ff;
 font-family: 'Montserrat', sans-serif;
 margin: 0;
 
@@ -19,7 +19,7 @@ header{
     left: 0;
 display: flex;
 min-height: 60px;
-background-color: rgb(209, 228, 235);
+background-color: #d1e4eb;
 justify-content: space-between;
 align-items: center;
 padding: 0 5%;
